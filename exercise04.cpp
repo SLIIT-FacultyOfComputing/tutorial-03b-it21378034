@@ -17,5 +17,11 @@ void print(int len, int wth) {
    cout << "Length : " << len 
         << ", Width  : " << wth << endl;
 }
+void input(int &len,int &wth)
+{
+  cout<<"Input the length: ";
+  cin>>len;
 
-// Implement the Input Function here
+  cout<<"Input the Width: ";
+  cin>>wth;  
+}

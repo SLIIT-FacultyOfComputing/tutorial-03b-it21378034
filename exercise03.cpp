@@ -55,7 +55,7 @@ int main() {
 	
 	int  HeightofBox1, WidthofBox1, LengthofBox1;
 	int  HeightofBox2, WidthofBox2, LengthofBox2;
-    float totalvolume,volume1,volume2;
+    float tottalvolume;
     // 2. Create a variable called box1 of the Box structure type
     // int box1Height, box1Width, box1Length;
     // 3. Create a variable called box2 of the Box structure type
@@ -79,8 +79,12 @@ int main() {
     cin >> LengthofBox2;
     
     // 5. Replace the coding below to pass the Box type structure
-    totalVolume  = (volume1=(HeightofBox1*WidthofBox1*LengthofBox1))+(volume2=(HeightofBox2*HeightofBox2*LengthofBox2));
+    totalVolume  = volume(HeightofBox1*WidthofBox1*LengthofBox1)+volume(HeightofBox2*HeightofBox2*LengthofBox2);
     cout << "Volume of Box is " << totalVolume << endl;
     
     return 0;
+}
+int volume{int hight,int width,intnlength}
+{
+  return heigth*width*length;
 }
